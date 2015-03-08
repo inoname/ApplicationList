@@ -33,3 +33,5 @@
 
 问题：  8.创建操作时使用了block，容易引起循环引用的问题<br>
 解决思路： 借助 dealloc 辅助判断，没有出现循环引用。因为下载操作在执行完毕之后会从"下载操作缓冲池"中移除，打破了循环引用。
+
+![image](https://github.com/kouliang/ApplicationList/blob/master/image/1.png)
